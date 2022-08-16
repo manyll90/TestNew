@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+      </div>
+      <ul class="play-list"></ul>
+    </div>
+    <div class="settings">
+      <div class="settings-button"></div>
+      <div class="setting-container">
+        <div class="settings-inner">
+          <div class="settings-item" >
+            <p class="item-text text-language">Language:</p>
+            <div class="item-button button-language">English</div>
+          </div>
+          <div class="settings-item" >
+            <p class="item-text text-time">Time:</p>
+            <div class="item-button button-time"></div>
+          </div>
+          <div class="settings-item" >
+            <p class="item-text text-data">Date:</p>
+            <div class="item-button button-date"></div>
+          </div>
+          <div class="settings-item" >
+            <p class="item-text text-greeting">Greeting:</p>
+            <div class="item-button button-greeting"></div>
+          </div>
+          <div class="settings-item" >
+            <p class="item-text text-weather">Weather:</p>
+            <div class="item-button button-weather"></div>
+          </div>
+          <div class="settings-item" >
+            <p class="item-text text-player">Player:</p>
+            <div class="item-button button-player"></div>
+          </div>
+          <div class="settings-item" >
+            <p class="item-text text-quotes">Quotes:</p>
+            <div class="item-button button-quotes"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" />
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" placeholder="" />
+    </div>
+  </main>
+  <footer class="footer">
+    <button class="change-quote"></button>
+    <div>
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+  </footer>
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>
